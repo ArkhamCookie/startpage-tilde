@@ -1,6 +1,6 @@
 // might convert to json file
 
-const CONFIG = {
+export const CONFIG = {
 	commandPathDelimiter: '/',
 	commandSearchDelimiter: ' ',
 	defaultSearchTemplate: 'https://duckduckgo.com/?q={}',

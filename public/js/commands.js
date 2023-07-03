@@ -1,4 +1,5 @@
 // type="module"
+import { CONFIG } from './config.js'
 
 class Commands extends HTMLElement {
 	constructor() {
@@ -10,9 +11,7 @@ class Commands extends HTMLElement {
 		const commandTemplate = document.getElementById('command-template')
 		
 		for (const [key, { name, url }] of COMMANDS.entries()) {
-			if (!name || !url) {
-				continue // skips if missing?
-			}
+			if (!name || !url) continue // skips if missing?
 
 			const clone = commandTemplate.content.cloneNode(true)
 			const command = clone.querySelector('.command')
