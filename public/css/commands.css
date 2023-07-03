@@ -1,0 +1,60 @@
+.commands {
+	columns: 1;
+	list-style: 1;
+	margin: 0 auto;
+	max-width: 10rem;
+	padding: 0 0 0 var(--space-1);
+	width: 100vw;
+}
+
+.command {
+	display: flex;
+	gap: var(--space-2);
+	outline: 0;
+	padding: var(--space-1);
+	text-decoration: none;
+}
+
+.key {
+	color: var(--color-text);
+	display: inline-block;
+	text-align: center;
+	width: 3ch;
+}
+
+.name {
+    color: var(--color-text-subtle);
+    transition: color var(--transition-speed);
+}
+
+.command:where(:focus, :hover) .name {
+    color: var(--color-text);
+}
+
+@media (min-width: 500px) {
+    .commands {
+    	columns: 2;
+    	max-width: 20rem;
+    }
+}
+
+@media (min-width: 700px) {
+    .commands {
+        columns: 3;
+        max-width: 30rem;
+      }
+    }
+
+@media (min-width: 900px) {
+    .commands {
+        columns: 4;
+        max-width: 40rem;
+      }
+    }
+
+@media (min-width: 1200px) {
+    .commands {
+        columns: 6;
+        max-width: 60rem;
+      }
+    }
