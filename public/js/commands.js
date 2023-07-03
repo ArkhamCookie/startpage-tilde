@@ -9,7 +9,7 @@ class Commands extends HTMLElement {
 		const clone = template.content.cloneNode(true)
 		const commands = clone.querySelector('.commands')
 		const commandTemplate = document.getElementById('command-template')
-		
+
 		for (const [key, { name, url }] of COMMANDS.entries()) {
 			if (!name || !url) continue // skips if missing?
 
@@ -20,7 +20,7 @@ class Commands extends HTMLElement {
 			if (CONFIG.openLinksInNewTab) {
 				command.target = '_blank'
 			}
-			
+
 			clone.querySelector('.key').innerText = key
 			clone.querySelector('.name').innerText = name
 			commands.append(clone)
