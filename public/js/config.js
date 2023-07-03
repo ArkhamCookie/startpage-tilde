@@ -12,3 +12,5 @@ export const CONFIG = {
 	rainSpeed: 1,
 	suggestionLimit: 4,
 }
+
+export { CONFIG }
