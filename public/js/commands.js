@@ -1,5 +1,6 @@
 // type="module"
 import { CONFIG } from './config.js'
+import { COMMANDS } from './shortcuts.js'
 
 class Commands extends HTMLElement {
 	constructor() {
@@ -10,7 +11,8 @@ class Commands extends HTMLElement {
 		const commands = clone.querySelector('.commands')
 		const commandTemplate = document.getElementById('command-template')
 
-		for (const [key, { name, url }] of commands.entries()) {
+		// eslint-disable-next-line no-undef
+		for (const [key, { name, url }] of COMMANDS.entries()) {
 			if (!name || !url) continue // skips if missing?
 
 			const clone = commandTemplate.content.cloneNode(true)
