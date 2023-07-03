@@ -1,0 +1,15 @@
+{
+    "trailingComma": "none",
+    "tabWidth": 4,
+    "semi": false,
+    "useTabs": true,
+    "singleQuote": true,
+    "endOfLine": "lf",
+    
+    "overrides": [
+        {
+            "files": ["*.csv","*.json","*.md","*.toml""*.yml","*.yaml"],
+            "options": { "tabWidth": 2 }
+        }
+    ]
+}
