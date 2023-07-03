@@ -181,7 +181,7 @@ class Search extends HTMLElement {
 
 		if (oq.search && suggestions.length < CONFIG.suggestionLimit) {
 			const response = await Search.#fetchDuckDuckGoSuggestions(oq.search)
-			const formatted = Search.#attachSearchPrefix(res, oq)
+			const formatted = Search.#attachSearchPrefix(response, oq)
 			suggestions = suggestions.concat(formatted)
 		}
 
