@@ -10,7 +10,5 @@ export const CONFIG = {
 	rainFrameRate: 1000 / 18,
 	rainResilience: 0.8,
 	rainSpeed: 1,
-	suggestionLimit: 4,
+	suggestionLimit: 4
 }
-
-export { CONFIG }
