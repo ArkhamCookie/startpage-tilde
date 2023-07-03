@@ -1,4 +1,5 @@
 // type = "module"
+import { CONFIG } from './config.js'
 
 class Rain extends HTMLElement {
 	#backgroundColor
