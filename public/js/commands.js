@@ -10,7 +10,7 @@ class Commands extends HTMLElement {
 		const commands = clone.querySelector('.commands')
 		const commandTemplate = document.getElementById('command-template')
 
-		for (const [key, { name, url }] of COMMANDS.entries()) {
+		for (const [key, { name, url }] of commands.entries()) {
 			if (!name || !url) continue // skips if missing?
 
 			const clone = commandTemplate.content.cloneNode(true)

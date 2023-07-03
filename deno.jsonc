@@ -18,8 +18,10 @@
 	"singleQuote": true
   },
   "tasks": {
-	"lint": "deno lint ./public/js",
-	"fmt": "deno fmt ./public/js"
+	"lint": "deno lint ./public/js ./server",
+	"fmt": "deno fmt ./public/js ./server",
+
+	"dev": "deno run -A ./server/server.js"
   },
   "nodeModulesDir": true,
   "imports": {}
