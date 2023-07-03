@@ -1,3 +1,4 @@
+/* eslint-disable */
 class Map {
 	// required
 	name
