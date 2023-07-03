@@ -5,10 +5,10 @@
     "useTabs": true,
     "singleQuote": true,
     "endOfLine": "lf",
-    
+
     "overrides": [
         {
-            "files": ["*.csv","*.html","*.json","*.md","*.toml""*.yml","*.yaml"],
+            "files": ["*.csv","*.html","*.json","*.md","*.toml","*.yml","*.yaml"],
             "options": { "tabWidth": 2 }
         }
     ]
