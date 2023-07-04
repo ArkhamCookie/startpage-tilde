@@ -34,10 +34,14 @@ export const COMMANDS = new Map([
 	[
 		'd',
 		{
-			name: 'Drive',
-			searchTemplate: '/drive/u/0/search?q={}',
-			suggestions: ['d/drive/u/1/my-drive', 'd/drive/u/2/my-drive'],
-			url: 'https://drive.google.com/drive/u/0/my-drive'
+			name: 'Deno',
+			suggestions: [
+				'std',
+				'x',
+				'manual',
+				'api'
+			],
+			url: 'https://deno.land'
 		}
 	],
 	[
